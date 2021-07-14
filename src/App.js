@@ -1,24 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactDOM from 'react-dom'
+import Snowfall from 'react-snowfall'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="App" >
+      <Snowfall style={{ transform: `rotate(180deg)` }} color="#C8D276" snowflakeCount={40} speed={[1, 2]} wind={[0, 0]} radius={[2, 12]} />
+    </div >
   );
 }
 
